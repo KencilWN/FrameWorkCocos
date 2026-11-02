@@ -1,0 +1,517 @@
+{
+  "schemaVersion": 1,
+  "capturedOn": "2026-11-02",
+  "sourceRepository": "Spins (local working project, Git committed content only)",
+  "sourceCommit": "8d1fec2a1b4715c802cf3328a7d12958b0387b8f",
+  "purpose": "Offline architecture study. Snapshots are not an independently runnable upstream framework. Use assets/Framework teaching implementations for executable APIs.",
+  "files": [
+    {
+      "sourcePath": "assets/Scripts/Lib/FrameAsserts/event/EventDispatcher.ts",
+      "snapshotPath": "reference/upstream/FrameAsserts/event/EventDispatcher.ts",
+      "sha256": "8c8a9ce79a89c0789907c7d3539ff4f32dac59beb84c5abc8a4968b96c0df49a",
+      "role": "read-only original; excluded from runtime/typecheck",
+      "imports": [
+        "./EventList"
+      ],
+      "hostDependenciesNotCopied": [],
+      "implicitGlobals": []
+    },
+    {
+      "sourcePath": "assets/Scripts/Lib/FrameAsserts/event/EventList.ts",
+      "snapshotPath": "reference/upstream/FrameAsserts/event/EventList.ts",
+      "sha256": "d3c206bfb54e2dc45efb56b36cb39a01b88d97ebcc3359e636a84db4b0b045f8",
+      "role": "read-only original; excluded from runtime/typecheck",
+      "imports": [
+        "cc"
+      ],
+      "hostDependenciesNotCopied": [],
+      "implicitGlobals": []
+    },
+    {
+      "sourcePath": "assets/Scripts/Lib/FrameAsserts/event/EventProcessor.ts",
+      "snapshotPath": "reference/upstream/FrameAsserts/event/EventProcessor.ts",
+      "sha256": "f0da85af56ff5fee1404540b9f76d5cf6d96fee59d3ae1f48dd317ad58309ffd",
+      "role": "read-only original; excluded from runtime/typecheck",
+      "imports": [
+        "cc",
+        "../dataMV/ViewModel"
+      ],
+      "hostDependenciesNotCopied": [],
+      "implicitGlobals": [
+        "dispatcher"
+      ]
+    },
+    {
+      "sourcePath": "assets/Scripts/Lib/FrameAsserts/dataMV/ViewModel.ts",
+      "snapshotPath": "reference/upstream/FrameAsserts/dataMV/ViewModel.ts",
+      "sha256": "15158e13fb05341eb4706c0ee2734560f5440920d4f7c09b235504aa2e32feb3",
+      "role": "read-only original; excluded from runtime/typecheck",
+      "imports": [
+        "../event/EventDispatcher",
+        "./JsonOb"
+      ],
+      "hostDependenciesNotCopied": [],
+      "implicitGlobals": []
+    },
+    {
+      "sourcePath": "assets/Scripts/Lib/FrameAsserts/dataMV/JsonOb.ts",
+      "snapshotPath": "reference/upstream/FrameAsserts/dataMV/JsonOb.ts",
+      "sha256": "bd63adf523e2b5488ad9b3be3ba265436f8cde6e79af382bcf21352bc45c55d9",
+      "role": "read-only original; excluded from runtime/typecheck",
+      "imports": [
+        "cc"
+      ],
+      "hostDependenciesNotCopied": [],
+      "implicitGlobals": []
+    },
+    {
+      "sourcePath": "assets/Scripts/Lib/FrameAsserts/widget/CompBase/EventComponent.ts",
+      "snapshotPath": "reference/upstream/FrameAsserts/widget/CompBase/EventComponent.ts",
+      "sha256": "82959b0783884c6f5fc8c8730db206aff63bfd6659da2c3a0d3870fd540c7541",
+      "role": "read-only original; excluded from runtime/typecheck",
+      "imports": [
+        "cc",
+        "../../dataMV/ViewModel",
+        "../../event/EventProcessor",
+        "./EventProcessorEx"
+      ],
+      "hostDependenciesNotCopied": [],
+      "implicitGlobals": [
+        "fwk"
+      ]
+    },
+    {
+      "sourcePath": "assets/Scripts/Lib/FrameAsserts/widget/CompBase/EventProcessorEx.ts",
+      "snapshotPath": "reference/upstream/FrameAsserts/widget/CompBase/EventProcessorEx.ts",
+      "sha256": "a2074ebc824536c0b0a48650e31e269dada240d300ea3b3d5c900bc267706d69",
+      "role": "read-only original; excluded from runtime/typecheck",
+      "imports": [
+        "cc",
+        "../../event/EventProcessor"
+      ],
+      "hostDependenciesNotCopied": [],
+      "implicitGlobals": []
+    },
+    {
+      "sourcePath": "assets/Scripts/Lib/FrameAsserts/widget/CompBase/PrefabComponent.ts",
+      "snapshotPath": "reference/upstream/FrameAsserts/widget/CompBase/PrefabComponent.ts",
+      "sha256": "049f0b3bb0127bd254dec2a5c8c71ba60abdec1c4d0646bd58dfccf21350d80d",
+      "role": "read-only original; excluded from runtime/typecheck",
+      "imports": [
+        "../../asset/ResourceAudio",
+        "../../asset/ResourceLoader",
+        "../../dataMV/ViewModel",
+        "./EventComponent"
+      ],
+      "hostDependenciesNotCopied": [],
+      "implicitGlobals": []
+    },
+    {
+      "sourcePath": "assets/Scripts/Lib/FrameAsserts/asset/ResourceLoader.ts",
+      "snapshotPath": "reference/upstream/FrameAsserts/asset/ResourceLoader.ts",
+      "sha256": "d89022f13424d6d94e1e24eceb57d1878f25d6cf239285f954ac42bd580d5b5c",
+      "role": "read-only original; excluded from runtime/typecheck",
+      "imports": [
+        "cc",
+        "./AssetMgr",
+        "./CachePrefabMgr",
+        "./Enums",
+        "./Resource"
+      ],
+      "hostDependenciesNotCopied": [],
+      "implicitGlobals": [
+        "fwk"
+      ]
+    },
+    {
+      "sourcePath": "assets/Scripts/Lib/FrameAsserts/asset/AssetMgr.ts",
+      "snapshotPath": "reference/upstream/FrameAsserts/asset/AssetMgr.ts",
+      "sha256": "14494820dfb21fe36363bbf336efcd81f1af17086912f9f79610f416a11b5771",
+      "role": "read-only original; excluded from runtime/typecheck",
+      "imports": [
+        "cc",
+        "../../baseTs/TSBase",
+        "./BundleMgr",
+        "./CacheManager",
+        "./Enums",
+        "./Resource"
+      ],
+      "hostDependenciesNotCopied": [
+        {
+          "specifier": "../../baseTs/TSBase",
+          "upstreamPath": "assets/Scripts/Lib/baseTs/TSBase.ts"
+        }
+      ],
+      "implicitGlobals": [
+        "fwk"
+      ]
+    },
+    {
+      "sourcePath": "assets/Scripts/Lib/FrameAsserts/asset/BundleMgr.ts",
+      "snapshotPath": "reference/upstream/FrameAsserts/asset/BundleMgr.ts",
+      "sha256": "285f52a0e81df1693c6ad4968ffd75bec5cd05036f7c5a2c7b55426f70728a9a",
+      "role": "read-only original; excluded from runtime/typecheck",
+      "imports": [
+        "cc",
+        "./Enums",
+        "../../ResourceBundleUtil"
+      ],
+      "hostDependenciesNotCopied": [
+        {
+          "specifier": "../../ResourceBundleUtil",
+          "upstreamPath": "assets/Scripts/Lib/ResourceBundleUtil.ts"
+        }
+      ],
+      "implicitGlobals": []
+    },
+    {
+      "sourcePath": "assets/Scripts/Lib/FrameAsserts/asset/Resource.ts",
+      "snapshotPath": "reference/upstream/FrameAsserts/asset/Resource.ts",
+      "sha256": "e84152f68908155161b573574819292d78618e83fd6ae946942b56f56c148055",
+      "role": "read-only original; excluded from runtime/typecheck",
+      "imports": [
+        "cc",
+        "../widget/CompBase/PrefabComponent",
+        "./Enums"
+      ],
+      "hostDependenciesNotCopied": [],
+      "implicitGlobals": []
+    },
+    {
+      "sourcePath": "assets/Scripts/Lib/FrameAsserts/asset/Enums.ts",
+      "snapshotPath": "reference/upstream/FrameAsserts/asset/Enums.ts",
+      "sha256": "bc407fa60196bed3a1cd11ed3597d6b46bf795532c745838394ee127a12637ae",
+      "role": "read-only original; excluded from runtime/typecheck",
+      "imports": [],
+      "hostDependenciesNotCopied": [],
+      "implicitGlobals": []
+    },
+    {
+      "sourcePath": "assets/Scripts/Lib/FrameAsserts/asset/CacheManager.ts",
+      "snapshotPath": "reference/upstream/FrameAsserts/asset/CacheManager.ts",
+      "sha256": "aae9796e8d3ac7dda3157851315ef51a91a7ddf8a2c88add67edb4a718630b76",
+      "role": "read-only original; excluded from runtime/typecheck",
+      "imports": [
+        "cc",
+        "../../../Config/GLConfig",
+        "../../Global",
+        "../Utils/MemUtil",
+        "./BundleMgr",
+        "./CachePrefabMgr",
+        "./Enums",
+        "./Resource"
+      ],
+      "hostDependenciesNotCopied": [
+        {
+          "specifier": "../../../Config/GLConfig",
+          "upstreamPath": "assets/Scripts/Config/GLConfig.ts"
+        },
+        {
+          "specifier": "../../Global",
+          "upstreamPath": "assets/Scripts/Lib/Global.ts"
+        },
+        {
+          "specifier": "../Utils/MemUtil",
+          "upstreamPath": "assets/Scripts/Lib/FrameAsserts/Utils/MemUtil.ts"
+        }
+      ],
+      "implicitGlobals": [
+        "Global"
+      ]
+    },
+    {
+      "sourcePath": "assets/Scripts/Lib/FrameAsserts/asset/CachePrefabMgr.ts",
+      "snapshotPath": "reference/upstream/FrameAsserts/asset/CachePrefabMgr.ts",
+      "sha256": "475bc7152a23e07614af7df115b7e18a1747b4fb44c670b61b09fe81a7375019",
+      "role": "read-only original; excluded from runtime/typecheck",
+      "imports": [
+        "cc",
+        "./AssetMgr",
+        "./BundleMgr",
+        "./CacheManager",
+        "./Enums",
+        "./Resource"
+      ],
+      "hostDependenciesNotCopied": [],
+      "implicitGlobals": []
+    },
+    {
+      "sourcePath": "assets/Scripts/Lib/FrameAsserts/asset/CacheViewMgr.ts",
+      "snapshotPath": "reference/upstream/FrameAsserts/asset/CacheViewMgr.ts",
+      "sha256": "e3ddc04925cc5b7fc505a9e1613ae1297a1a20d230fd7aa22033e38507e09bdd",
+      "role": "read-only original; excluded from runtime/typecheck",
+      "imports": [
+        "cc",
+        "../../../../Scripts/Lib/baseTs/TSBase",
+        "../../Global",
+        "../Def/typeDef",
+        "./AssetMgr",
+        "./BundleMgr",
+        "./Enums",
+        "./Resource"
+      ],
+      "hostDependenciesNotCopied": [
+        {
+          "specifier": "../../../../Scripts/Lib/baseTs/TSBase",
+          "upstreamPath": "assets/Scripts/Lib/baseTs/TSBase.ts"
+        },
+        {
+          "specifier": "../../Global",
+          "upstreamPath": "assets/Scripts/Lib/Global.ts"
+        },
+        {
+          "specifier": "../Def/typeDef",
+          "upstreamPath": "assets/Scripts/Lib/FrameAsserts/Def/typeDef.ts"
+        }
+      ],
+      "implicitGlobals": [
+        "Global"
+      ]
+    },
+    {
+      "sourcePath": "assets/Scripts/Lib/FrameAsserts/asset/ResourceAudio.ts",
+      "snapshotPath": "reference/upstream/FrameAsserts/asset/ResourceAudio.ts",
+      "sha256": "61ea878e02fd90c899115af2bd9f9d4375571d32c6fdcb1f2e6c664ea1d2f0bb",
+      "role": "read-only original; excluded from runtime/typecheck",
+      "imports": [
+        "cc",
+        "./AssetMgr",
+        "./CacheAudioMgr",
+        "./platformAsset/PtAudio",
+        "./Resource"
+      ],
+      "hostDependenciesNotCopied": [],
+      "implicitGlobals": []
+    },
+    {
+      "sourcePath": "assets/Scripts/Lib/FrameAsserts/asset/CacheAudioMgr.ts",
+      "snapshotPath": "reference/upstream/FrameAsserts/asset/CacheAudioMgr.ts",
+      "sha256": "7787c1493d1b9601b0ec71079f01465958fd3e31b00d4fac0fb04acbb2c48241",
+      "role": "read-only original; excluded from runtime/typecheck",
+      "imports": [
+        "cc",
+        "./Resource"
+      ],
+      "hostDependenciesNotCopied": [],
+      "implicitGlobals": []
+    },
+    {
+      "sourcePath": "assets/Scripts/Lib/FrameAsserts/asset/platformAsset/PtAudio.ts",
+      "snapshotPath": "reference/upstream/FrameAsserts/asset/platformAsset/PtAudio.ts",
+      "sha256": "eb050380079d120053023c4ae89ed1bcf06abad7515e6a03611aac4803aa48a9",
+      "role": "read-only original; excluded from runtime/typecheck",
+      "imports": [
+        "cc",
+        "../CacheAudioMgr"
+      ],
+      "hostDependenciesNotCopied": [],
+      "implicitGlobals": []
+    },
+    {
+      "sourcePath": "assets/Scripts/Lib/FrameAsserts/asset/GlobalAudio.ts",
+      "snapshotPath": "reference/upstream/FrameAsserts/asset/GlobalAudio.ts",
+      "sha256": "88df61e90798e779edf7ce46e6e4a82a3b208f9188c69f83b63f71778f1bfb3f",
+      "role": "read-only original; excluded from runtime/typecheck",
+      "imports": [
+        "cc",
+        "../../baseTs/Ctor",
+        "./Enums",
+        "./ResourceAudio"
+      ],
+      "hostDependenciesNotCopied": [
+        {
+          "specifier": "../../baseTs/Ctor",
+          "upstreamPath": "assets/Scripts/Lib/baseTs/Ctor.ts"
+        }
+      ],
+      "implicitGlobals": []
+    },
+    {
+      "sourcePath": "assets/Scripts/Lib/FrameAsserts/asset/ReleaseMgr.ts",
+      "snapshotPath": "reference/upstream/FrameAsserts/asset/ReleaseMgr.ts",
+      "sha256": "5e5ca3043fe9c78135fad19014dbc48f6041461169ab06239bd17adbcd1bb271",
+      "role": "read-only original; excluded from runtime/typecheck",
+      "imports": [
+        "cc",
+        "./BundleMgr",
+        "./CacheAudioMgr",
+        "./CacheManager",
+        "./CachePrefabMgr",
+        "./CacheViewMgr",
+        "../../Global",
+        "./Resource"
+      ],
+      "hostDependenciesNotCopied": [
+        {
+          "specifier": "../../Global",
+          "upstreamPath": "assets/Scripts/Lib/Global.ts"
+        }
+      ],
+      "implicitGlobals": [
+        "Global"
+      ]
+    },
+    {
+      "sourcePath": "assets/Scripts/Lib/FrameAsserts/interfaceUI/Controller.ts",
+      "snapshotPath": "reference/upstream/FrameAsserts/interfaceUI/Controller.ts",
+      "sha256": "0982c7c2e364251f50945ac5f63f46f2ff423736f579ea84eb42f00e2697062b",
+      "role": "read-only original; excluded from runtime/typecheck",
+      "imports": [
+        "../event/EventProcessor"
+      ],
+      "hostDependenciesNotCopied": [],
+      "implicitGlobals": []
+    },
+    {
+      "sourcePath": "assets/Scripts/Lib/FrameAsserts/interfaceUI/MgrLayer.ts",
+      "snapshotPath": "reference/upstream/FrameAsserts/interfaceUI/MgrLayer.ts",
+      "sha256": "b6f82c5cbf67d72171c00ad7c8f769ab5828d5a8596dc3a5c16fec162bf99e32",
+      "role": "read-only original; excluded from runtime/typecheck",
+      "imports": [
+        "cc",
+        "../../NodeUi",
+        "../../baseTs/Ctor",
+        "../asset/CacheViewMgr",
+        "../Def/typeDef"
+      ],
+      "hostDependenciesNotCopied": [
+        {
+          "specifier": "../../NodeUi",
+          "upstreamPath": "assets/Scripts/Lib/NodeUi.ts"
+        },
+        {
+          "specifier": "../../baseTs/Ctor",
+          "upstreamPath": "assets/Scripts/Lib/baseTs/Ctor.ts"
+        },
+        {
+          "specifier": "../Def/typeDef",
+          "upstreamPath": "assets/Scripts/Lib/FrameAsserts/Def/typeDef.ts"
+        }
+      ],
+      "implicitGlobals": []
+    },
+    {
+      "sourcePath": "assets/Scripts/Lib/FrameAsserts/task/TaskQueue.ts",
+      "snapshotPath": "reference/upstream/FrameAsserts/task/TaskQueue.ts",
+      "sha256": "648b21e1765fca06308834e3a3aa9cddfdc6e0432eb38c86e2bf00a75947c91e",
+      "role": "read-only original; excluded from runtime/typecheck",
+      "imports": [
+        "../../Global",
+        "../Def/typeDef"
+      ],
+      "hostDependenciesNotCopied": [
+        {
+          "specifier": "../../Global",
+          "upstreamPath": "assets/Scripts/Lib/Global.ts"
+        },
+        {
+          "specifier": "../Def/typeDef",
+          "upstreamPath": "assets/Scripts/Lib/FrameAsserts/Def/typeDef.ts"
+        }
+      ],
+      "implicitGlobals": [
+        "dispatcher",
+        "Global",
+        "AcTask"
+      ]
+    },
+    {
+      "sourcePath": "assets/Scripts/Lib/FrameAsserts/task/TaskManager.ts",
+      "snapshotPath": "reference/upstream/FrameAsserts/task/TaskManager.ts",
+      "sha256": "9f8cedc1f44fab03acd4b0653ca3bf3c1f83311ceae380e314e125f756805ad3",
+      "role": "read-only original; excluded from runtime/typecheck",
+      "imports": [
+        "../../../Config/Def/gEnum",
+        "../dataMV/ViewModel",
+        "../Def/typeDef",
+        "./TaskQueue"
+      ],
+      "hostDependenciesNotCopied": [
+        {
+          "specifier": "../../../Config/Def/gEnum",
+          "upstreamPath": "assets/Scripts/Config/Def/gEnum.ts"
+        },
+        {
+          "specifier": "../Def/typeDef",
+          "upstreamPath": "assets/Scripts/Lib/FrameAsserts/Def/typeDef.ts"
+        }
+      ],
+      "implicitGlobals": [
+        "dispatcher",
+        "AcTask"
+      ]
+    },
+    {
+      "sourcePath": "assets/Scripts/Lib/FrameAsserts/widget/ScrollList/VirsualGrideList.ts",
+      "snapshotPath": "reference/upstream/FrameAsserts/widget/ScrollList/VirsualGrideList.ts",
+      "sha256": "1d3cce6fb96f9c1d528ec2ab37913c7f8495812661172258cf542f14651627f8",
+      "role": "read-only original; excluded from runtime/typecheck",
+      "imports": [
+        "cc",
+        "../../../NodeUi",
+        "../../../../../Scripts/Lib/baseTs/TSBase",
+        "../CompBase/GrideLayer",
+        "../CompBase/SplitGroupBase",
+        "../CompBase/SplitItem",
+        "../CompBase/SplitLayer"
+      ],
+      "hostDependenciesNotCopied": [
+        {
+          "specifier": "../../../NodeUi",
+          "upstreamPath": "assets/Scripts/Lib/NodeUi.ts"
+        },
+        {
+          "specifier": "../../../../../Scripts/Lib/baseTs/TSBase",
+          "upstreamPath": "assets/Scripts/Lib/baseTs/TSBase.ts"
+        },
+        {
+          "specifier": "../CompBase/GrideLayer",
+          "upstreamPath": "assets/Scripts/Lib/FrameAsserts/widget/CompBase/GrideLayer.ts"
+        },
+        {
+          "specifier": "../CompBase/SplitGroupBase",
+          "upstreamPath": "assets/Scripts/Lib/FrameAsserts/widget/CompBase/SplitGroupBase.ts"
+        },
+        {
+          "specifier": "../CompBase/SplitItem",
+          "upstreamPath": "assets/Scripts/Lib/FrameAsserts/widget/CompBase/SplitItem.ts"
+        },
+        {
+          "specifier": "../CompBase/SplitLayer",
+          "upstreamPath": "assets/Scripts/Lib/FrameAsserts/widget/CompBase/SplitLayer.ts"
+        }
+      ],
+      "implicitGlobals": []
+    },
+    {
+      "sourcePath": "assets/Scripts/Lib/Tools/GLStorage.ts",
+      "snapshotPath": "reference/upstream/Tools/GLStorage.ts",
+      "sha256": "9c3ddb36164c060fc3749e49d52fd7f29d94cb1209482714e85874f01253433f",
+      "role": "read-only original; excluded from runtime/typecheck",
+      "imports": [
+        "cc"
+      ],
+      "hostDependenciesNotCopied": [],
+      "implicitGlobals": []
+    },
+    {
+      "sourcePath": "assets/Scripts/Lib/PoolUtil.ts",
+      "snapshotPath": "reference/upstream/PoolUtil.ts",
+      "sha256": "cf71f36d2f319a2d500d44be35ff988765929bf3c0e532b725ea4fcc759ba7b3",
+      "role": "read-only original; excluded from runtime/typecheck",
+      "imports": [
+        "cc",
+        "./Global"
+      ],
+      "hostDependenciesNotCopied": [
+        {
+          "specifier": "./Global",
+          "upstreamPath": "assets/Scripts/Lib/Global.ts"
+        }
+      ],
+      "implicitGlobals": [
+        "Global"
+      ]
+    }
+  ]
+}

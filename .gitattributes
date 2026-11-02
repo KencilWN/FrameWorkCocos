@@ -1,0 +1,10 @@
+* text=auto
+*.ts text eol=lf
+*.md text eol=lf
+*.json text eol=lf
+*.cjs text eol=lf
+*.scene text eol=lf
+*.prefab text eol=lf
+*.meta text eol=lf
+# Preserve the byte hashes of archived upstream files (including original CRLF).
+reference/upstream/** -text

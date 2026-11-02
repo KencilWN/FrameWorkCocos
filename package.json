@@ -1,0 +1,22 @@
+{
+  "name": "framework-demo",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Independent Cocos Creator 3.8.7 framework learning and reuse project",
+  "uuid": "4213eb41-f63d-472b-8749-c4231d30a5c6",
+  "scripts": {
+    "check:portable": "node scripts/check-portable.cjs",
+    "typecheck": "node scripts/typecheck.cjs",
+    "test": "node --test tests/*.test.cjs",
+    "check": "npm run check:portable && npm test && npm run typecheck"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "devDependencies": {
+    "typescript": "4.9.5"
+  },
+  "creator": {
+    "version": "3.8.7"
+  }
+}
