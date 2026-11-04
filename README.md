@@ -23,10 +23,13 @@ GitHub仓库：[KencilWN/FrameWorkCocos](https://github.com/KencilWN/FrameWorkCo
 
 ## 资料入口
 
+2026-11-03学习偏向已调整为**棋牌小游戏客户端性能**：基础业务与生命周期继续按关卡推进，逐步加入Profiler、内存/GC、2D渲染、包体/首屏、重连与多平台实测。公开案例用于分析与本人最小复现，不计作已参与生产项目；当前仍先完成实验32。
+
 | 想做什么 | 阅读入口 |
 | --- | --- |
 | 停了几天，恢复学习 | [学习入口与当前项目地图](docs/guide/start-here.md)、[实时进度](docs/progress.md) |
 | 了解完整阶段和目标 | [动态学习计划](docs/learning-plan.md)、[阶段验收](docs/checkpoints.md) |
+| 对照棋牌性能岗位学习 | [岗位专项路线](docs/jd-performance-roadmap.md)、[公开案例研习库](docs/guide/performance-cases.md) |
 | 训练自己解题，不只抄实现 | [问题求解流程与练习模板](docs/guide/problem-solving.md) |
 | 补TS、this、unknown和复制 | [TypeScript实用基础](docs/guide/typescript.md) |
 | 补编辑器、Prefab、绑定、生命周期 | [Creator实操基础](docs/guide/cocos.md) |

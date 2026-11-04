@@ -14,11 +14,13 @@
 | resources/ResourceScope | 本地资源加载与自有引用 | cc.resources、DisposableScope | 备课，待Creator资源验收 |
 | state/ObservableValue | 简单可观察值 | Cleanup类型 | 备课，未接入Demo |
 | ui/PanelHost | 创建/关闭自有页面节点 | Node、Prefab、instantiate | 备课，待Creator页面验收 |
-| pool/PrefabPool | 单模板节点池 | Node、Prefab、instantiate | 选修，待Creator状态重置验收 |
+| pool/PrefabPool | 单模板节点池 | Node、Prefab、instantiate | 棋牌性能专项必修诊断/取舍，未接入，待Creator状态重置验收 |
 | tasks/SerialTaskQueue | FIFO串行任务 | Promise | 选修，未接入Demo |
 | audio/AudioPlayer | 单AudioSource入口 | AudioSource、AudioClip | 选修，待实际音频验收 |
 
 新模块有类型和隔离逻辑验证，不把Node替身测试当成Creator运行通过。用法见[示例](examples.md)，迁到其他游戏见[复用清单](reuse.md)。
+
+2026-11-03学习优先级见[棋牌性能岗位路线](../jd-performance-roadmap.md)：模块使用必须结合业务与测量；池/列表基本诊断纳入必修，不要求所有页面都池化，也不把已备齐模块算作掌握。
 
 ## EventDispatcher / EventList
 
