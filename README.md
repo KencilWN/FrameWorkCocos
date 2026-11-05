@@ -27,6 +27,7 @@ GitHub仓库：[KencilWN/FrameWorkCocos](https://github.com/KencilWN/FrameWorkCo
 
 | 想做什么 | 阅读入口 |
 | --- | --- |
+| 了解个人背景、目标与近期变化 | [学习者背景与教学约定](docs/learner-profile.md)、[2026年10月至11月5日个人复盘](docs/reviews/2026-10-01-to-2026-11-05.md) |
 | 停了几天，恢复学习 | [学习入口与当前项目地图](docs/guide/start-here.md)、[实时进度](docs/progress.md) |
 | 了解完整阶段和目标 | [动态学习计划](docs/learning-plan.md)、[阶段验收](docs/checkpoints.md) |
 | 对照棋牌性能岗位学习 | [岗位专项路线](docs/jd-performance-roadmap.md)、[公开案例研习库](docs/guide/performance-cases.md) |
@@ -72,6 +73,8 @@ tests/                   逻辑与生命周期测试，含明确的引擎替身
 ## 当前进度与检查范围
 
 K1组件/生命周期、K2状态/存储已通过限定验收。商店购买→单份快照保存→重开恢复已由学习者确认；指定数量的模型修正版通过定向检查。K3仍在页面整合与设计判断收尾，K4～K8未完成。恢复函数主体曾由AI辅助，这部分不记为独立设计掌握。
+
+本人2026-11-05明确：本轮工作项目除手动摆UI外，功能修改代码均由AI完成。工作提交只表示任务涉及，不证明本人会实现、独立设计或排错；本学习工程的亲手练习与帮助程度单独记录，详见[个人背景](docs/learner-profile.md)。
 
 `npm run check:portable` 检查运行导入、框架业务依赖方向、元数据UUID、来源哈希及资料本地链接。`npm test` 使用Node和小型引擎替身检查清理、过期结果、引用计数、队列拒绝和节点所有权。`npm run typecheck` 使用本仓库锁定的TS4.9.5，跳过引擎声明内部检查。
 
